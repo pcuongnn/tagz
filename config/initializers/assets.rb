@@ -8,4 +8,8 @@ Rails.application.config.assets.version = '1.0'
 
 # Precompile additional assets.
 # application.js, application.css, and all non-JS/CSS in app/assets folder are already added.
-Rails.application.config.assets.precompile += ['spree/*']
+Rails.application.config.assets.precompile += %w( spree/frontend/bootstrap.min.css )
+Rails.application.config.assets.precompile += %w( spree/frontend/style.css )
+Rails.application.config.assets.precompile += %w( spree/frontend/logo1.png )
+Rails.application.config.assets.precompile += %w( spree/frontend/jquery.js )
+Rails.application.config.assets.precompile += %w( spree/frontend/bootstrap.min.js )
