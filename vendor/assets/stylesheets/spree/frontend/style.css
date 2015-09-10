@@ -161,6 +161,17 @@ h6 {
     }
 }
 
+div#spree-main-content{
+    margin-top: 160px;
+}
+div.well{
+    margin-bottom: 100px;
+}
+
+div.tagz-about,  div.tagz-contact {
+    margin-top: -160px;    
+}
+
 footer {
     
     background-color: #ebebeb;

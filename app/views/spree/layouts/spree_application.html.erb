@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-
+    <%= render partial: 'spree/shared/head' %>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -35,7 +35,7 @@
             <div class="floatmed">
             <a class="navbar-brand topnav visible-xs navtextcol" href="/contact"><%= image_tag "spree/frontend/logo1.png" , class: 'logostyle' %></a>
             <% if spree_current_user %>
-                <%= link_to Spree.t(:logout), spree_logout_path, :method => :delete, class:  "navbar-brand topnav  navtextcol nextcol " %>
+                <%= link_to Spree.t(:logout), destroy_spree_user_session_path, class:  "navbar-brand topnav  navtextcol nextcol " %>
             <% else %>
                 <%= link_to Spree.t(:login), spree_login_path, class:  "navbar-brand topnav  navtextcol nextcol " %>
                 <%= link_to Spree.t(:signup), spree_signup_path, class:  "navbar-brand topnav  navtextcol nextcol " %>
@@ -90,20 +90,13 @@
         </div>
         <!-- /.container -->
     </nav>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
+    <div id="spree-main-content">
         <%= render partial: 'spree/shared/sidebar' if content_for? :sidebar %>
 
         <div id="content" class="<%= !content_for?(:sidebar) ? "col-sm-12" : "col-sm-8 col-md-9" %>" data-hook>
           <%= yield %>
         </div>
-
+    </div>    
        <nav class="navbar navbar-default navbar-fixed-bottom topnav">
                     <ul class="nav navbar-nav navbar-right footermarg">
                     <li>
