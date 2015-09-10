@@ -1,0 +1,1 @@
+(function(){jQuery(function(){return $(".stock_item_backorderable").on("click",function(){return $(this).parent("form").submit()}),$(".toggle_stock_item_backorderable").on("submit",function(){return $.ajax({type:this.method,url:this.action,data:$(this).serialize()}),!1})})}).call(this);

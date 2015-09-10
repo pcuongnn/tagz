@@ -1,0 +1,1 @@
+(function(){$(document).ready(function(){return $(document).ajaxStart(function(){return $("#progress").stop(!0,!0).fadeIn()}),$(document).ajaxStop(function(){return $("#progress").fadeOut()})})}).call(this);

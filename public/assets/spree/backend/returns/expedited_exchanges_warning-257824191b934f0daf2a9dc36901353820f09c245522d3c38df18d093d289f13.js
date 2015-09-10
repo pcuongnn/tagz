@@ -1,0 +1,1 @@
+(function(){$(function(){return $(document).on("change",".return-items-table .return-item-exchange-selection",function(){return $(".expedited-exchanges-warning").fadeIn()})})}).call(this);
