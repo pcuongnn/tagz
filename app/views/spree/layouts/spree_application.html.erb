@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<!--Header-->
 <head>
     <%= render partial: 'spree/shared/head' %>
     <meta charset="utf-8">
@@ -11,12 +11,11 @@
 
 
     <!-- Bootstrap Core CSS -->
-    <!-- <link href="/assets/tagz/css/bootstrap.min.css" rel="stylesheet"> -->
     <%= stylesheet_link_tag  'spree/frontend/bootstrap.min.css', media: 'all', 'data-turbolinks-track' => true %>
-    <!-- <link href="/assets/tagz/css/style.css" rel="stylesheet"> -->
+
     <%= stylesheet_link_tag  'spree/frontend/style.css', media: 'all', 'data-turbolinks-track' => true %>
+
     <!-- Custom Fonts -->
-    <!-- <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
     <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -25,22 +24,35 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    
+    <style>
+    
+    body {
+
+
+font-family: 'Roboto', sans-serif;
+}
+    
+    </style>
 
 </head>
+    <!--End Header-->
 
 <body>
-   
- <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
+    
+   <!--star Navbar-->
+   <nav class="navbar navbar-default navbar-fixed-top topnav n2n2 n2n22" role="navigation">
         <div class=" topnav">
             <div class="floatmed">
-            <a class="navbar-brand topnav visible-xs navtextcol" href="/contact"><%= image_tag "spree/frontend/logo1.png" , class: 'logostyle' %></a>
+            <a class="navbar-brand topnav visible-xs navtextcol" href="#"><%= image_tag "spree/frontend/logo1.png" , class: 'logostyle' %></a>
             <% if spree_current_user %>
-                <%= link_to Spree.t(:logout), destroy_spree_user_session_path, class:  "navbar-brand topnav  navtextcol nextcol " %>
+                <%= link_to Spree.t(:logout), destroy_spree_user_session_path, class:  "navbar-brand topnav  navtextcol nextcol hheader tt " %>
             <% else %>
-                <%= link_to Spree.t(:login), spree_login_path, class:  "navbar-brand topnav  navtextcol nextcol " %>
-                <%= link_to Spree.t(:signup), spree_signup_path, class:  "navbar-brand topnav  navtextcol nextcol " %>
-            <% end %>
-            <a class="navbar-brand topnav  nextcol" href="/cart">BAG 0</a>
+                <%= link_to Spree.t(:login), spree_login_path, class:  "navbar-brand topnav  navtextcol nextcol hheader tt " %>
+                <%= link_to Spree.t(:signup), spree_signup_path, class:  "navbar-brand topnav  navtextcol nextcol hheader tt " %>
+            <% end %>    
+                <a class="navbar-brand topnav  nextcol1 hheader2" href="#">BAG 0</a>
+            
             </div>
    
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -51,16 +63,19 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand topnav hidden-xs" href="/contact"><%= image_tag "spree/frontend/logo1.png" , class: 'logostyle' %></a>
+                <a class="navbar-brand topnav hidden-xs " href="#"><%= image_tag "spree/frontend/logo1.png" , class: 'logostyle' %></a>
             </div>
             
-               <div class="col-md-12 header2">
+               <div class="col-md-12 header2 nn1111 ttgg">
                    <div class="col-md-6 col-md-offset-6">
                    
-         <ul class="nav navbar-nav navbar-right hidden-xs">
+         <ul class="nav navbar-nav navbar-right hidden-xs nextcol3">
              
     <li>
                         <a class=" fweight1 "  style="color:#1288c5"href="/">Home</a>
+                    </li>
+                      <li>
+                        <a class=" fweight1" style="color:#1288c5" href="#About">Tagz</a>
                     </li>
                     <li>
                         <a class=" fweight1" style="color:#1288c5" href="/about">About Tagz</a>
@@ -76,7 +91,10 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right visible-xs">
                     <li>
-                        <a class=" fweight1" style="color:#1288c5" href="/products">Home</a>
+                        <a class=" fweight1" style="color:#1288c5" href="/">Home</a>
+                    </li>
+                     <li>
+                        <a class=" fweight1" style="color:#1288c5" href="#About">Tagz</a>
                     </li>
                     <li>
                         <a class=" fweight1"  style="color:#1288c5"href="/about">About Tagz</a>
@@ -89,43 +107,45 @@
             <!-- /.navbar-collapse -->
         </div>
         <!-- /.container -->
-    </nav>
+    </nav> <!--End Navbar-->
+ 
     <div id="spree-main-content">
         <%= render partial: 'spree/shared/sidebar' if content_for? :sidebar %>
 
         <div id="content" class="<%= !content_for?(:sidebar) ? "col-sm-12" : "col-sm-8 col-md-9" %>" data-hook>
           <%= yield %>
         </div>
-    </div>    
-       <nav class="navbar navbar-default navbar-fixed-bottom topnav">
-                    <ul class="nav navbar-nav navbar-right footermarg">
-                    <li>
-                        <a class="footcol fweight navtextcol " href="#">Terms and Condition</a>  
-                     
-                    </li>
-                          <li class="fsym">
-                        <span class="footcol fweight navtextcol ">|</span>  
-                     
-                    </li>
-                    <li>
-                        <a class="footcol fweight navtextcol" href="#">FAQ</a>
-                        
-                    </li>
-                          <li class="fsym">
-                        <span class="footcol fweight navtextcol ">|</span>  
-                     
-                    </li>
-                    <li>
-                        <a class="footcol fweight navtextcol" href="/contact">Contact</a>
-                    </li>
-                </ul>
-    </nav>
+    </div>
+    
+     <!-- End of Page Content -->
 
-    <!-- jQuery -->
-    <!-- <script src="js/jquery.js"></script> -->
+    <!-- /.intro-header -->
+
+   <!--Start Footer-->
+ <footer>
+        
+        <div class="col-md-12 fcolor">    
+                
+                      <ul class="list-inline footer45">
+                        <li>
+                            <a href="#">Terms and Conditions</a>
+                        </li>
+                        <li class="footer-menu-divider">|</li>
+                        <li>
+                            <a href="#about">FAQ</a>
+                        </li>
+                        <li class="footer-menu-divider">|</li>
+                        <li>
+                            <a href="#services">Contact</a>
+                        </li>
+                        
+                    </ul>
+                   
+                
+        </div>
+     
+    </footer><!--End Footer-->
     <%= javascript_include_tag 'spree/frontend/jquery.js', 'data-turbolinks-track' => true %>
-    <!-- Bootstrap Core JavaScript -->
-    <!-- <script src="js/bootstrap.min.js"></script> -->
     <%= javascript_include_tag 'spree/frontend/bootstrap.min.js', 'data-turbolinks-track' => true %>
 
 </body>

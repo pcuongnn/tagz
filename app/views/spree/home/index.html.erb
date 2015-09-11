@@ -1,0 +1,49 @@
+<a name="about"></a>
+     <div class="intro-header">
+         
+         <!--Start Container-->
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="intro-message">
+                        <center> <h1 class="fw jjj icmargin7"> Shoe Tags That Enhances Your Shoe Look </h1></center>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <div class="col-md-12 hombodycol hmarg1">
+            <h3 class="abt hombd">KICK TAGZ</h3>
+            <h5 class="knwmr">Know More</h5>
+    
+       <div class="bgcol hombodycol">
+        <p class="p1 p3">
+        Lorem Ipsum elite Lorem Ipsum elite Lorem Ipsum elite Lorem Ipsum elite Lorem Ipsum elite Lorem Ipsum elite Lorem Ipsum elite
+        Lorem Ipsum elite Lorem Ipsum elite Lorem Ipsum elite Lorem Ipsum elite Lorem Ipsum elite Lorem Ipsum elite Lorem Ipsum elite
+        Lorem Ipsum elite Lorem Ipsum elite Lorem Ipsum elite Lorem Ipsum elite Lorem Ipsum elite Lorem Ipsum elite Lorem Ipsum elite
+        
+           </p></div></div>
+   <div class="col-md-12">
+      <!--start Container-->
+         <div class="container">
+              <h4 class="similarh nn11 icmargin10"> Similar Recommendations </h4>
+        	<% @products.each do |product| %>
+        	<div class="col-md-4 t8 t9i icmargin8">
+                        <center>  <h5><%= product.name %></h5></center>
+                        <center><h5><%= product.sku %></h5></center>
+                        <%= link_to small_image(product, itemprop: "image", class: "shoeh"), product_path(product) %>
+                        <h3 class="t11">
+                        <%= product.price %>
+                        </h3><br>
+                        <h5 class="sho1"><%= link_to 'Details' , product_path(product) %></h5>
+                        <h5 class="t10 icmargin9">ADD TO BAG</h5>
+             </div>
+        <% end %>     
+         </div>   
+            
+        
+    </div>
