@@ -75,7 +75,7 @@ font-family: 'Roboto', sans-serif;
                         <a class=" fweight1 "  style="color:#1288c5"href="/">Home</a>
                     </li>
                       <li>
-                        <a class=" fweight1" style="color:#1288c5" href="#About">Tagz</a>
+                        <a class=" fweight1" style="color:#1288c5" href="/products">Tagz</a>
                     </li>
                     <li>
                         <a class=" fweight1" style="color:#1288c5" href="/about">About Tagz</a>
@@ -94,7 +94,7 @@ font-family: 'Roboto', sans-serif;
                         <a class=" fweight1" style="color:#1288c5" href="/">Home</a>
                     </li>
                      <li>
-                        <a class=" fweight1" style="color:#1288c5" href="#About">Tagz</a>
+                        <a class=" fweight1" style="color:#1288c5" href="/products">Tagz</a>
                     </li>
                     <li>
                         <a class=" fweight1"  style="color:#1288c5"href="/about">About Tagz</a>
@@ -109,13 +109,7 @@ font-family: 'Roboto', sans-serif;
         <!-- /.container -->
     </nav> <!--End Navbar-->
  
-    <div id="spree-main-content">
-        <%= render partial: 'spree/shared/sidebar' if content_for? :sidebar %>
-
-        <div id="content" class="<%= !content_for?(:sidebar) ? "col-sm-12" : "col-sm-8 col-md-9" %>" data-hook>
           <%= yield %>
-        </div>
-    </div>
     
      <!-- End of Page Content -->
 

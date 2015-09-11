@@ -1,0 +1,53 @@
+<a name="about"></a>
+    
+        <div class="col-md-12 tmagt">
+            <h2 class="hidden-xs t7">  Tagz > Details</h2>
+            <!--Start Container-->
+        <div class="container t1 t92 icmargin220 icmargin12 icmargin13">
+            <div class="col-md-2">
+            <%= link_to large_image(@product, itemprop: "image", class: "t2 t91"), product_path(@product) %>
+                <!-- /.container --></div>
+            <div class="col-md-10 tmarg11">
+            
+             <h4  class="t4 tmarg1"><%= @product.name %></h4>
+            <p class="t5 t51">
+                Lorem Ipsum illum Lorem Ipsum illum Lorem Ipsum illum v Lorem Ipsum iLorem Ipsum illum Lorem Ipsum illum 
+                Lorem Ipsum illum Lorem Ipsum illum Lorem Ipsum illum Lorem Ipsum illum Lorem Ipsum illum Lorem Ipsum illum 
+                 Lorem Ipsum illum Lorem Ipsum illum Lorem Ipsum illum Lorem Ipsum illumLorem Ipsum illum
+                </p>
+                
+                <a class="btn btn-default btn-lg btnonh submit dupsub subbtn madd tmargin icmargin14 t6 "> <span class="network-name">ADD TO BAG </span></a>
+            <h1 class="t5 tagzcst icmargin15"><%= @product.price %>$</h1>
+     <div class="btn-group caddto caddto3 tt22 caddto4 icmargin17 " role="group" aria-label="First group">
+        <button class="btn btn-default caddto caddto2" type="button">+</button>
+         <button class="btn btn-default caddto2" type="button">0</button>
+        <button class="btn btn-default caddto caddto2" type="button">-</button>
+      </div>
+            </div>
+
+    </div>
+           <!--End Container-->
+        </div>
+        
+    
+   
+     <div class="col-md-12">
+      <!--Start container-->
+         <div class="container">
+              <h3 class="similarh m sim msim2 t99ii"> Similar Recommendations </h3>
+             <% @product.taxons.first.products.each do |product| %>
+        	<div class="col-md-4 t8 t9i icmargin8">
+                        <center>  <h5><%= product.name %></h5></center>
+                        <center><h5><%= product.sku %></h5></center>
+                        <%= link_to large_image(product, itemprop: "image", class: "shoeh"), product_path(product) %>
+                        <h3 class="t11">
+                        <%= product.price %>$
+                        </h3><br>
+                        <h5 class="sho1"><%= link_to 'Details' , product_path(product) %></h5>
+                        <h5 class="t10 icmargin9">ADD TO BAG</h5>
+             </div>
+        <% end %>  
+         </div>   
+            
+        <!--End container-->
+    </div>
