@@ -1,0 +1,49 @@
+<a name="about"></a>
+    <div class="introheight">
+        <!--Start Container-->
+        <div class="container">
+
+            <div class="row rfloat">
+                <div class="col-lg-12">
+                    <div class="intro-message">
+          
+                       <div class="col-md-12 talign1">
+
+                          <% @body_id = 'login' %>
+                          <h3 class="abt  icmargin11"> Login </h3>
+                          <% if flash[:alert] %>
+                            <div class="alert alert-danger"><%= flash[:alert] %></div>
+                          <% end %>
+                          <%= form_for Spree::User.new, :as => :spree_user, :url => spree.create_new_session_path do |f| %>
+                            <div id="password-credentials">
+                              <p>
+                                <%= f.email_field :email, :class => "x1 tmargin icmargin1", :tabindex => 1, autofocus: true, :placeholder => "Email ID" %>
+                              </p>
+                              <p>
+                                <%= f.password_field :password, :class => "x1 tmargin icmargin1", :tabindex => 2, :placeholder => "Password" %>
+                              </p>
+                            </div>
+                            <p>
+                              <%= f.check_box :remember_me, :tabindex => 3 %>
+                              <%= f.label :remember_me, Spree.t(:remember_me) %>
+                            </p>
+
+                            <p><%= f.submit "LOGIN", :class => "btn btn-default btn-lg btnonh submit dupsub subbtn tmargin vvt", :tabindex => 4, :style => "color:#FFFFFF" %></p>
+                          <% end %>          
+                          <div class="text-center">
+                            <%= Spree.t(:or) %> 
+                                <%= link_to Spree.t(:create_a_new_account), spree.signup_path %> |
+                                <%= link_to Spree.t(:forgot_password), spree.recover_password_path %>
+                          </div>
+                          <div data-hook="login_extras"></div>
+                          
+          
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
