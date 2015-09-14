@@ -16,12 +16,9 @@
                  Lorem Ipsum illum Lorem Ipsum illum Lorem Ipsum illum Lorem Ipsum illumLorem Ipsum illum
                 </p>
                 
-                <a class="btn btn-default btn-lg btnonh submit dupsub subbtn madd tmargin icmargin14 t6 "> <span class="network-name">ADD TO BAG </span></a>
             <h1 class="t5 tagzcst icmargin15"><%= @product.price %>$</h1>
-     <div class="btn-group caddto caddto3 tt22 caddto4 icmargin17 " role="group" aria-label="First group">
-        <button class="btn btn-default caddto caddto2" type="button">+</button>
-         <button class="btn btn-default caddto2" type="button">0</button>
-        <button class="btn btn-default caddto caddto2" type="button">-</button>
+      <div class="btn-group caddto caddto3 tt22 caddto4 icmargin17 " role="group" aria-label="First group">
+      <%= render :partial => 'cart_form' %>
       </div>
             </div>
 
