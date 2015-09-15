@@ -1,7 +1,8 @@
 <a name="about"></a>
      <!-- Page Content -->
+ </br>
     <% @products.each do |product| %>
-        	<div class="col-md-3 t8 t99 tag02 icmargin30">
+            <div class="col-md-4 t8 t9i icmargin8">
                         <center>  <h5><%= product.name %></h5></center>
                         <center><h5><%= product.sku %></h5></center>
                         <%= link_to large_image(product, itemprop: "image", class: "shoeh"), product_path(product) %>
@@ -9,6 +10,15 @@
                         <%= product.price %>$
                         </h3><br>
                         <h5 class="sho1"><%= link_to 'Details' , product_path(product) %></h5>
-                        <h5 class="t10 icmargin9">ADD TO BAG</h5>
+                        <h5 class="t10 icmargin9">
+                        <%= form_for :order, :url => populate_orders_url do |f| %>
+                          <%= hidden_field_tag "variants[#{product.variants_including_master.first.id
+                        }]", 1, :size => 3 %>
+                          <%= hidden_field_tag "variant_id", product.variants_including_master.first.id %>
+                          <%= hidden_field_tag "quantity", 1 %>
+                          <%= link_to Spree.t(:add_to_cart), '#', :onclick => "$(this).parent().submit(); return false;", :class => "button" %>
+                        <% end %>
+                                
+                        </h5>
              </div>
         <% end %>     

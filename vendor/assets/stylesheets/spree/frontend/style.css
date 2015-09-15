@@ -27,7 +27,22 @@ h6 {
    font-family: 'Roboto', sans-serif;
     font-weight: 700;
 }
+div.add-to-cart{
+    margin-left: 100px;
+    margin-top:  20px;
+}
 
+div#registration{
+    margin-top: 200px;
+}
+
+div#checkout-summary.col-md-3{
+    margin-top: 100px;
+}
+
+div.col-md-9{
+  margin-top: 100px;      
+}
 .topnav {
     font-size: 14px; 
         background-color: #ebebeb;
@@ -43,7 +58,7 @@ h6 {
     padding-bottom: 50px;
     text-align: center;
     color: #f8f8f8;
-    background: url(../img/intro-bg.jpg) no-repeat center center;
+    background: url(../img/home.png) no-repeat center center;
     background-size: cover;
 }
 

@@ -1,0 +1,28 @@
+<%= render partial: 'spree/shared/error_messages', locals: { target: @order } %>
+<div class="col-md-12 rcart3">
+   <div id="page-wrap">
+
+  <h1 class="rcart2 rcart002 icmargin5" >Cart</h1>
+   
+  <table>
+    <thead>
+    <tr>
+      <th class="rcart1"></th>
+      <th class="rcart1"></th>
+            <th class="rcart1"><center><h4 class="rcart4">QUANTITY</h4></center></th>
+            <th class="rcart1"> <center><h4 class="rcart4">DELIVERY</h4></center></th>
+            <th class="rcart1"><center> <h4 class="rcart4" >SUBTOTAL</h4></center></th>
+    </tr>
+    </thead>
+    <tbody>
+    <%= render partial: 'spree/orders/line_item', collection: order_form.object.line_items, locals: { order_form: order_form } %>
+    </tbody>
+    
+  </table>
+      
+  <%= button_tag class: 'btn btn-default btn-lg btnonh submit dupsub subbtn tmargin rcart004 rcart9 rcart001 icmargin4 ', id: 'checkout-link', name: 'checkout', :style => "color:#FFFFFF" do %>
+                <span class="network-name">PROCEED</span>
+              <% end %>
+</div>
+          
+</div>

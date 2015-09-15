@@ -1,0 +1,23 @@
+<% variant = line_item.variant %>
+
+<%= order_form.fields_for :line_items, line_item do |item_form| %>
+  <tr class="line-item">
+    <td class="rcart1" data-hook="cart_item_image">
+      <% if variant.images.length == 0 %>
+        <%= link_to small_image(variant.product), variant.product, class: 'rcart6 rcart7' %>
+      <% else %>
+        <%= link_to image_tag(variant.images.first.attachment.url(:product)), variant.product, class: 'rcart6 rcart7' %>
+      <% end %>
+    </td>
+    <td class="rcart1"><h4 class="rcart4 rcart10"><%= line_item.name %></h4> <h4 class="rcart4 rcart10"> JERSY APC-0000001</h4></td>
+    <td class="rcart1">
+                
+                <center><h4 class="rcart4"><%- line_item.quantity %><%= item_form.number_field :quantity, min: 0, class: "form-control line_item_quantity", size: 5 %></h4></td></center>
+       <td class="rcart1"><center><h4 class="rcart4">FREE</h4></td></center>
+    <td class="rcart1" data-hook="cart_item_total"><center><h4 class="rcart4">
+      <%= line_item.display_amount.to_html unless line_item.quantity.nil? %></h4></center>
+    
+      <%= link_to content_tag(:span, 'REMOVE', class: 'btn btn-info hbtn1 ccbtn rcart5 rcart8 icmargin3'), '#', class: 'delete', id: "delete_#{dom_id(line_item)}" %>
+    </td>
+  </tr>
+<% end %>
