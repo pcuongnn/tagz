@@ -46,7 +46,7 @@
                         }]", 1, :size => 3 %>
                           <%= hidden_field_tag "variant_id", product.variants_including_master.first.id %>
                           <%= hidden_field_tag "quantity", 1 %>
-                          <%= link_to Spree.t(:add_to_cart), '#', :onclick => "$(this).parent().submit(); return false;", :class => "button" %>
+                          <%= link_to 'ADD TO BAG', '#', :onclick => "$(this).parent().submit(); return false;", :class => "button" %>
                         <% end %>
                         </h5>
              </div>
@@ -55,3 +55,26 @@
             
         
     </div>
+<footer class="footer">
+        
+        <div class="col-md-12 fcolor">    
+                
+                      <ul class="list-inline footer45">
+                        <li>
+                            <a href="#">Terms and Conditions</a>
+                        </li>
+                        <li class="footer-menu-divider">|</li>
+                        <li>
+                            <a href="#about">FAQ</a>
+                        </li>
+                        <li class="footer-menu-divider">|</li>
+                        <li>
+                            <a href="#services">Contact</a>
+                        </li>
+                        
+                    </ul>
+                   
+                
+        </div>
+     
+    </footer>

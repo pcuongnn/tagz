@@ -14,9 +14,9 @@
     <%= stylesheet_link_tag  'spree/frontend/bootstrap.min.css', media: 'all', 'data-turbolinks-track' => true %>
 
     <%= stylesheet_link_tag  'spree/frontend/style.css', media: 'all', 'data-turbolinks-track' => true %>
-
+    <%= stylesheet_link_tag  'spree/frontend/font-awesome.min.css', media: 'all', 'data-turbolinks-track' => true %>
     <!-- Custom Fonts -->
-    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,300italic,300" rel="stylesheet" type="text/css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -46,10 +46,10 @@ font-family: 'Roboto', sans-serif;
             <div class="floatmed">
             <a class="navbar-brand topnav visible-xs navtextcol" href="#"><%= image_tag "spree/frontend/logo1.png" , class: 'logostyle' %></a>
             <% if spree_current_user %>
-                <%= link_to Spree.t(:logout), destroy_spree_user_session_path, class:  "navbar-brand topnav  navtextcol nextcol hheader tt " %>
+                <%= link_to 'LOG OUT', destroy_spree_user_session_path, class:  "navbar-brand topnav  navtextcol nextcol hheader tt " %>
             <% else %>
-                <%= link_to Spree.t(:login), spree_login_path, class:  "navbar-brand topnav  navtextcol nextcol hheader tt " %>
-                <%= link_to Spree.t(:signup), spree_signup_path, class:  "navbar-brand topnav  navtextcol nextcol hheader tt " %>
+                <%= link_to 'LOG IN', spree_login_path, class:  "navbar-brand topnav  navtextcol nextcol hheader tt " %>
+                <%= link_to 'SIGN UP', spree_signup_path, class: "navbar-brand topnav navtextcol nextcol hheader tt " %>
             <% end %>    
                 <a class="navbar-brand topnav  nextcol1 hheader2" href="/cart">BAG 0</a>
             
@@ -116,29 +116,7 @@ font-family: 'Roboto', sans-serif;
     <!-- /.intro-header -->
 
    <!--Start Footer-->
- <footer>
-        
-        <div class="col-md-12 fcolor">    
-                
-                      <ul class="list-inline footer45">
-                        <li>
-                            <a href="#">Terms and Conditions</a>
-                        </li>
-                        <li class="footer-menu-divider">|</li>
-                        <li>
-                            <a href="#about">FAQ</a>
-                        </li>
-                        <li class="footer-menu-divider">|</li>
-                        <li>
-                            <a href="#services">Contact</a>
-                        </li>
-                        
-                    </ul>
-                   
-                
-        </div>
-     
-    </footer><!--End Footer-->
+ 
     <%= javascript_include_tag 'spree/frontend/jquery.js', 'data-turbolinks-track' => true %>
     <%= javascript_include_tag 'spree/frontend/bootstrap.min.js', 'data-turbolinks-track' => true %>
 

@@ -15,7 +15,7 @@
      
             <h4 class="hcol"> Common you need to have something in bag !</h4></div>
         <div class="col-md-12 cart022">
-         <p><%= link_to "SHOP", products_path, class: "btn btn-default btn-lg btnonh submit dupsub subbtn tmargin vvt", :style => "color:#FFFFFF" %></p>
+         <%= link_to "SHOP", products_path, class: "btn btn-default btn-lg btnonh submit dupsub subbtn tmargin vvt", :style => "color:#FFFFFF" %>
         </div>
                     </div>
                 </div>
@@ -32,7 +32,7 @@
             <%= render partial: 'form', locals: { order_form: order_form } %>
           </div>
 
-          <div class="links col-md-6 navbar-form pull-right text-right" data-hook="cart_buttons">
+          <!-- <div class="links col-md-6 navbar-form pull-right text-right" data-hook="cart_buttons">
             <div class="form-group">
               <%= button_tag class: 'btn btn-primary', id: 'update-button' do %>
                 <%= Spree.t(:update) %>
@@ -41,12 +41,12 @@
                 <%= Spree.t(:checkout) %>
               <% end %>
             </div>
-          </div>
+          </div> -->
         </div>
       <% end %>
     </div>
 
-    <div id="empty-cart" class="col-md-6 pull-left" data-hook>
+    <!-- <div id="empty-cart" class="col-md-6 pull-left" data-hook>
       <%= form_tag empty_cart_path, method: :put do %>
         <p id="clear_cart_link" data-hook>
           <%= submit_tag Spree.t(:empty_cart), class: 'btn btn-default' %>
@@ -54,6 +54,29 @@
           <%= link_to Spree.t(:continue_shopping), products_path, class: 'continue' %>
         </p>
       <% end %>
-    </div>
+    </div> -->
   <% end %>
 </div>
+<footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 ">
+                    <ul class="list-inline footer43">
+                        <li>
+                            <a href="#">Terms and Conditions</a>
+                        </li>
+                        <li class="footer-menu-divider">|</li>
+                        <li>
+                            <a href="#about">FAQ</a>
+                        </li>
+                        <li class="footer-menu-divider">|</li>
+                        <li>
+                            <a href="#services">Contact</a>
+                        </li>
+                        
+                    </ul>
+                  
+                </div>
+            </div>
+        </div>
+    </footer>

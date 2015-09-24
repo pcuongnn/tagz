@@ -1,24 +1,80 @@
 <a name="about"></a>
      <!-- Page Content -->
- </br>
-    <% @products.each do |product| %>
-            <div class="col-md-4 t8 t9i icmargin8">
-                        <center>  <h5><%= product.name %></h5></center>
-                        <center><h5><%= product.sku %></h5></center>
-                        <%= link_to large_image(product, itemprop: "image", class: "shoeh"), product_path(product) %>
-                        <h3 class="t11">
-                        <%= product.price %>$
-                        </h3><br>
-                        <h5 class="sho1"><%= link_to 'Details' , product_path(product) %></h5>
-                        <h5 class="t10 icmargin9">
-                        <%= form_for :order, :url => populate_orders_url do |f| %>
-                          <%= hidden_field_tag "variants[#{product.variants_including_master.first.id
-                        }]", 1, :size => 3 %>
-                          <%= hidden_field_tag "variant_id", product.variants_including_master.first.id %>
-                          <%= hidden_field_tag "quantity", 1 %>
-                          <%= link_to Spree.t(:add_to_cart), '#', :onclick => "$(this).parent().submit(); return false;", :class => "button" %>
-                        <% end %>
-                                
-                        </h5>
-             </div>
-        <% end %>     
+    <% @products.each_slice(4).with_index do |slice, index| -%>
+      <% if index == 0 %>
+        <div class="col-md-12 theader3">
+          <% slice.each do |product| -%>
+                <div class="col-md-3 t8 t99 tag02 icmargin30">
+                            <center>  <h5><%= product.name %></h5></center>
+                            <center><h5><%= product.sku %></h5></center>
+                            <%= link_to large_image(product, itemprop: "image", class: "shoeh"), product_path(product) %>
+                            <h3 class="t11">
+                            <%= product.price %>$
+                            </h3><br>
+                            <h5 class="sho1"><%= link_to 'Details' , product_path(product) %></h5>
+                            <h5 class="t10 icmargin9">
+                            <%= form_for :order, :url => populate_orders_url do |f| %>
+                              <%= hidden_field_tag "variants[#{product.variants_including_master.first.id
+                            }]", 1, :size => 3 %>
+                              <%= hidden_field_tag "variant_id", product.variants_including_master.first.id %>
+                              <%= hidden_field_tag "quantity", 1 %>
+                              <%= link_to 'ADD TO BAG', '#', :onclick => "$(this).parent().submit(); return false;", :class => "button" %>
+                            <% end %>
+                                    
+                            </h5>
+                 </div>
+          <% end %>
+        </div>
+      <% else %>
+        <div class="col-md-12 trow2i ">
+          <% slice.each do |product| -%>
+                <div class="col-md-3 t8 t99 tag02 icmargin30">
+                            <center>  <h5><%= product.name %></h5></center>
+                            <center><h5><%= product.sku %></h5></center>
+                            <%= link_to large_image(product, itemprop: "image", class: "shoeh"), product_path(product) %>
+                            <h3 class="t11">
+                            <%= product.price %>$
+                            </h3><br>
+                            <h5 class="sho1"><%= link_to 'Details' , product_path(product) %></h5>
+                            <h5 class="t10 icmargin9">
+                            <%= form_for :order, :url => populate_orders_url do |f| %>
+                              <%= hidden_field_tag "variants[#{product.variants_including_master.first.id
+                            }]", 1, :size => 3 %>
+                              <%= hidden_field_tag "variant_id", product.variants_including_master.first.id %>
+                              <%= hidden_field_tag "quantity", 1 %>
+                              <%= link_to 'ADD TO BAG', '#', :onclick => "$(this).parent().submit(); return false;", :class => "button" %>
+                            <% end %>
+                                    
+                            </h5>
+                 </div>
+          <% end %>
+        </div>
+      <% end %>         
+    <% end %>
+             
+
+
+<footer class="footer">
+        
+        <div class="col-md-12 fcolor fcl11 fcl12">    
+                
+                     <ul class="list-inline footer46">
+                        <li>
+                            <a href="#">Terms and Conditions</a>
+                        </li>
+                        <li class="footer-menu-divider">|</li>
+                        <li>
+                            <a href="#about">FAQ</a>
+                        </li>
+                        <li class="footer-menu-divider">|</li>
+                        <li>
+                            <a href="#services">Contact</a>
+                        </li>
+                        
+                    </ul>
+                
+                   
+                
+        </div>
+     
+    </footer>
