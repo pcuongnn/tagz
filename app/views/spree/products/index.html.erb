@@ -1,18 +1,23 @@
-<a name="about"></a>
-     <!-- Page Content -->
     <% @products.each_slice(4).with_index do |slice, index| -%>
-      <% if index == 0 %>
-        <div class="col-md-12 theader3">
+      <% if index == (@products.size-1)/4 %>
+        <div class="col-md-12" style="top:130px;">
+          <div class="container r1 r2">
           <% slice.each do |product| -%>
-                <div class="col-md-3 t8 t99 tag02 icmargin30">
-                            <center>  <h5><%= product.name %></h5></center>
-                            <center><h5><%= product.sku %></h5></center>
-                            <%= link_to large_image(product, itemprop: "image", class: "shoeh"), product_path(product) %>
-                            <h3 class="t11">
+                <div class="col-md-3 t8 t9i icmargin8">
+                  <div class=" row u1">
+                            <center>  <h5><%= product.name %></h5>
+                            <h5><%= product.sku %></h5>
+                            <%= link_to large_image(product, itemprop: "image", class: "shoeh"), product_path(product) %></center>
+                            <div class="col-xs-12">
+                            <h3>
                             <%= product.price %>$
-                            </h3><br>
-                            <h5 class="sho1"><%= link_to 'Details' , product_path(product) %></h5>
-                            <h5 class="t10 icmargin9">
+                            </h3>
+                          </div>
+                          <div class="col-xs-6">
+                            <h5><%= link_to 'Details' , product_path(product) %></h5>
+                          </div>
+                          <div class="col-xs-6">
+                            <h5 class="pull-right">
                             <%= form_for :order, :url => populate_orders_url do |f| %>
                               <%= hidden_field_tag "variants[#{product.variants_including_master.first.id
                             }]", 1, :size => 3 %>
@@ -22,21 +27,31 @@
                             <% end %>
                                     
                             </h5>
+                          </div>
+                  </div>          
                  </div>
           <% end %>
+        </div>
         </div>
       <% else %>
-        <div class="col-md-12 trow2i ">
+        <div class="col-md-12" style="top:130px;">
+          <div class="container r1">
           <% slice.each do |product| -%>
-                <div class="col-md-3 t8 t99 tag02 icmargin30">
-                            <center>  <h5><%= product.name %></h5></center>
-                            <center><h5><%= product.sku %></h5></center>
-                            <%= link_to large_image(product, itemprop: "image", class: "shoeh"), product_path(product) %>
-                            <h3 class="t11">
+                <div class="col-md-3 t8 t9i icmargin8">
+                  <div class=" row u1">
+                            <center>  <h5><%= product.name %></h5>
+                            <h5><%= product.sku %></h5>
+                            <%= link_to large_image(product, itemprop: "image", class: "shoeh"), product_path(product) %></center>
+                            <div class="col-xs-12">
+                            <h3>
                             <%= product.price %>$
-                            </h3><br>
-                            <h5 class="sho1"><%= link_to 'Details' , product_path(product) %></h5>
-                            <h5 class="t10 icmargin9">
+                            </h3>
+                          </div>
+                          <div class="col-xs-6">
+                            <h5><%= link_to 'Details' , product_path(product) %></h5>
+                          </div>
+                          <div class="col-xs-6">
+                            <h5 class="pull-right">
                             <%= form_for :order, :url => populate_orders_url do |f| %>
                               <%= hidden_field_tag "variants[#{product.variants_including_master.first.id
                             }]", 1, :size => 3 %>
@@ -46,19 +61,22 @@
                             <% end %>
                                     
                             </h5>
+                          </div>
+                  </div>          
                  </div>
           <% end %>
         </div>
-      <% end %>         
+        </div>
+      <% end %>
     <% end %>
              
 
 
 <footer class="footer">
         
-        <div class="col-md-12 fcolor fcl11 fcl12">    
+        <div class="col-md-12 fcolor">    
                 
-                     <ul class="list-inline footer46">
+                      <ul class="list-inline footer45">
                         <li>
                             <a href="#">Terms and Conditions</a>
                         </li>
@@ -72,7 +90,6 @@
                         </li>
                         
                     </ul>
-                
                    
                 
         </div>

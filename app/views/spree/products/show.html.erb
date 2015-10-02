@@ -1,11 +1,11 @@
 <a name="about"></a>
     
-        <div class="col-md-12 tmagt">
+        <div class="col-md-12 tmagt tag1">
             <h2 class="hidden-xs t7">  Tagz > Details</h2>
             <!--Start Container-->
         <div class="container t1 t92 icmargin220 icmargin12 icmargin13">
             <div class="col-md-2">
-            <%= link_to large_image(@product, itemprop: "image", class: "t2 t91"), product_path(@product) %>
+            <%= link_to large_image(@product, itemprop: "image", class: " t91 img-responsive"), product_path(@product) %>
                 <!-- /.container --></div>
             <div class="col-md-10 tmarg11">
             
@@ -28,28 +28,62 @@
      <div class="col-md-12">
       <!--Start container-->
          <div class="container">
-              <h3 class="similarh m sim msim2 t99ii"> Similar Recommendations </h3>
+              <h4 class="similarh nn11 icmargin10"> Similar Recommendations </h4>
              <% @product.taxons.first.products.each do |product| %>
           <div class="col-md-4 t8 t9i icmargin8">
-                        <center>  <h5><%= product.name %></h5></center>
-                        <center><h5><%= product.sku %></h5></center>
-                        <%= link_to large_image(product, itemprop: "image", class: "shoeh"), product_path(product) %>
-                        <h3 class="t11">
+            <div class=" row u1">
+                        <center>  <h5><%= product.name %></h5>
+                        <h5><%= product.sku %></h5>
+                        <%= link_to large_image(product, itemprop: "image", class: "shoeh"), product_path(product) %></center>
+                        <div class="col-xs-12">
+                        <h3>
                         <%= product.price %>$
-                        </h3><br>
-                        <h5 class="sho1"><%= link_to 'Details' , product_path(product) %></h5>
-                        <h5 class="t10 icmargin9">
+                        </h3>
+                        </div>
+                        <div class="col-xs-6">
+                        <h5><%= link_to 'Details' , product_path(product) %></h5>
+                        </div>
+                        <div class="col-xs-6">
+                        <h5 class="pull-right">
                         <%= form_for :order, :url => populate_orders_url do |f| %>
                           <%= hidden_field_tag "variants[#{product.variants_including_master.first.id
                         }]", 1, :size => 3 %>
                           <%= hidden_field_tag "variant_id", product.variants_including_master.first.id %>
                           <%= hidden_field_tag "quantity", 1 %>
-                          <%= link_to Spree.t(:add_to_cart), '#', :onclick => "$(this).parent().submit(); return false;", :class => "button" %>
+                          <%= link_to 'ADD TO BAG', '#', :onclick => "$(this).parent().submit(); return false;", :class => "button" %>
                         <% end %>
                         </h5>
+                        </div>
              </div>
+            </div>
         <% end %>  
          </div>   
             
         <!--End container-->
     </div>
+<footer>
+        
+        <div class="col-md-12 fcolor">    
+                
+                    <div class="col-lg-12 ">
+                    <ul class="list-inline footer44">
+                        <li>
+                            <a href="#">Terms and Conditions</a>
+                        </li>
+                        <li class="footer-menu-divider">|</li>
+                        <li>
+                            <a href="#about">FAQ</a>
+                        </li>
+                        <li class="footer-menu-divider">|</li>
+                        <li>
+                            <a href="#services">Contact</a>
+                        </li>
+                        
+                    </ul>
+                  
+                </div>
+                   
+                
+        </div>
+     
+    </footer>

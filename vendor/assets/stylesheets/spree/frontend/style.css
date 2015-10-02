@@ -43,6 +43,10 @@ div#checkout-summary.col-md-3{
 div.col-md-9{
   margin-top: 100px;      
 }
+.bdv{
+overflow-x: hidden;
+}
+
 .topnav {
     font-size: 14px; 
         background-color: #ebebeb;
@@ -55,7 +59,7 @@ div.col-md-9{
 
 .intro-header {
        padding-top: 50px;
-    padding-bottom: 50px;
+   padding-bottom: 137px;
     text-align: center;
     color: #f8f8f8;
     background: url(../img/home.png) no-repeat center center;
@@ -64,8 +68,8 @@ div.col-md-9{
 
 .intro-message {
     position: relative;
-    padding-top: 20%;
-    padding-bottom: 20%;
+  padding-top: 24%;
+    padding-bottom: 0px;
 }
 
 .intro-message > h1 {
@@ -110,10 +114,10 @@ div.col-md-9{
 }
 
 .footer43{
-   float: right;
-    height: 45px;
+    float: right;
+    height: 62px;
     margin-top: 35px;
-    margin-right: 48px;
+    margin-right: -30px;
     font-weight: 100;
 }
 .footer44{
@@ -132,9 +136,9 @@ float: right;
 }
 .footer46{
 float: right;
-    height: 62px;
+    height: 45px;
     margin-top: 35px;
-    margin-right: -30px;
+    margin-right: 48px;
     font-weight: 100;
 }
 .footer47{
@@ -229,9 +233,14 @@ border-bottom: 1px solid black;
     }
 }
 
-footer {
+.footer {
     
     background-color: #ebebeb;
+        margin-bottom: -26px;
+}
+.footer1{
+background-color: #ebebeb;
+    margin-bottom: -44px;
 }
 
 p.copyright {
@@ -244,7 +253,7 @@ p.copyright {
     color:  #1288c5;
     margin-left: -23px;
     margin-bottom: 30px;
-    margin-top:71px;
+    margin-top:42px;
 }
 .p1{
 
@@ -252,7 +261,7 @@ p.copyright {
    line-height: 1.5;
     font-weight:100;
     word-spacing:3px;
-    margin-bottom:20px;
+    margin-bottom:157px;
 }
 
 .nav1c{
@@ -296,6 +305,9 @@ width: 163px;
     background-color: #1288c5;
     margin-left: -20px;
 }
+.vvt1{
+margin-left: 0px;
+}
 .submit{
 
     margin-top: 14px;
@@ -304,7 +316,7 @@ width: 163px;
 .textb{
 margin-left:87px;
 }
-.contheight{
+. contheight{
  height:494px;
 }
 
@@ -319,7 +331,7 @@ margin-left:-17px;
 .hcol{
 color:black;
 font-weight:100;
-    margin-left:-23px;
+    margin-left:-13px;
        
 }
 .abttag{
@@ -343,6 +355,7 @@ background-color: white;
     border-top:solid 1px black;
 }
 
+}
 .contdetailmarg{
 margin-left: -265px;
 }
@@ -412,11 +425,14 @@ margin-right:20px;
     }
 }
 
-@media(max-width:379px)
+@media(max-width:479px)
 {
    .icmargin{
        margin-top: 175px;
    }
+    .footer45{
+        margin-right: -11px;
+    }
     .icmargin1{
         width: 264px;
     }
@@ -452,8 +468,12 @@ font-weight:100;
 
 .fcolor{
 background-color:#ebebeb;
-    height:107px;
-    margin-bottom: -44px;
+margin-top: 23px;
+}
+
+.fcolor1{
+background-color:#ebebeb;
+margin-top: 27px;
 }
 
 .talign{
@@ -523,7 +543,7 @@ margin-top: 27px;
 
 a.btnonh:hover {
 
-background-color:cornflowerblue;
+background-color:#1288c5;
 
 }
 
@@ -558,7 +578,8 @@ background-color:#ebebeb;
 @media screen and (max-width:799px){
 
             .fcolor{
-       height: 156px;
+     height: 110px;
+                margin-top: 324px;
     }
     .fcl11{
     margin-top: 166px;
@@ -599,19 +620,20 @@ background-color:#ebebeb;
 /*  Home  */
 
 .hombd{
-      margin-top: 83px;
+    margin-top: 0px;
     margin-left: 60px;
     padding-bottom: 10px;
-     color: #1288c5;
-    margin-bottom: 35px;
+    color: #1288c5;
+    margin-bottom: 33px;
     padding-top: 32px;
    
 }
 .hombodycol{
 background-color: #ebebeb;
+height: 252px;
 }
 .knwmr{
-    color: black;
+    color: black:;
     margin-left: 215px;
     margin-bottom: 30px;
     margin-top: -59px;
@@ -635,7 +657,7 @@ color: black;
 .shoeh{
 height: 150px;
     width: 150px;
-    margin-left: 65px;
+
 }
 .shborder{
 border-color: rgba(0, 0, 0, 0.4);
@@ -675,6 +697,7 @@ width:350px;
 }
 .fw{
 font-weight:500;
+    margin-top: -44px;
 }
 .p3{
 padding-bottom:83px;
@@ -703,32 +726,34 @@ font-weight: 600;
 .t5{
 font-weight: 100;
     color: black;
-    margin-top: 34px;
+    margin-top: auto;
     float: left;
     text-align: justify;
     margin-left: 167px;
+    margin-right: 28px;
 }
 .t6{
-    margin-left: 498px;
-    margin-top: 30px;
+    margin-left: auto;
+    margin-top: auto;
     background-color:#1288c5;
 }
 .t7{
-margin-top: 159px;
-    margin-bottom: -153px;
+
     color: #1288c5;
     float: left;
     margin-left: 73px;
     font-weight:500;
 }
 .t8{
-border-color: #ccc;
-    border-style: solid;
-    border-width: 1px;
+
+  
     margin-top: 152px;
     margin-bottom: 34px;
-  margin-right: 51px;
-    width: 328px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.u1{
+border:1px solid #ebebeb;
 }
 .t9{
 width: 251px;
@@ -756,33 +781,36 @@ width: 184px;
 
 /* Table *******************************/
 #page-wrap {
-	margin: 5px;
+    margin: 5px;
 }
 p {
-	margin: 20px 0; 
+    margin: 20px 0; 
 }
 
-	/* 
-	Generic Styling, for Desktops/Laptops 
-	*/
-	table { 
-		width: 100%; 
-		border-collapse: collapse; 
-	}
-	/* Zebra striping */
-	tr:nth-of-type(odd) { 
-		background: #eee; 
-	}
-	th { 
-		background: #333; 
-		color: white; 
-		font-weight: bold; 
-	}
-	td, th { 
-		padding: 6px; 
-		border: 1px solid #ccc; 
-		text-align: left; 
-	}
+    /* 
+    Generic Styling, for Desktops/Laptops 
+    */
+    table { 
+        width: 100%; 
+        border-collapse: collapse; 
+    }
+    /* Zebra striping */
+    
+    tr:nth-of-type(odd) { 
+        background: #eee; 
+      
+    }
+
+    th { 
+        background: #333; 
+        color: white; 
+        font-weight: bold; 
+    }
+    td, th { 
+        padding: 6px; 
+        border: 1px solid #ccc; 
+        text-align: left; 
+    }
 .cmargtp{
 margin-top:223px;
     margin-bottom: 300px;
@@ -795,6 +823,9 @@ margin-top:223px;
     border-right-color: white;
     border-left-color: white;
     border-bottom:0px;
+}
+.tr1{
+height: 245px;
 }
 .cimg{
 width: 200px;
@@ -865,7 +896,7 @@ margin-bottom: -187px;
     color: #1288c5;
 }
 .t11{
-margin-top: -18px;
+    margin-top: 16px;
 }
 .ch11{
 margin-right: 38px;
@@ -892,12 +923,12 @@ margin-right:38px;
 height:46px;
 }
 .caddto3{
-margin-top: -65px;
-    margin-right: -228px;
+margin-top: auto;
+    margin-right: auto;
 }
 .caddto4{
-       margin-left: 355px;
-    margin-top: -66px;
+       margin-left: auto;
+    margin-top: auto;
 }
 
 .cad{
@@ -910,14 +941,27 @@ margin-top: -65px;
     .iv{
     margin-left:10px;
     }
+     .hheader2{
+    margin-left: -3px;
+        margin-top :31px;
+    }
 }
 /****************************************** Tagzopen ******************************************/
 .t99{
-width: 269px;
+width: 251px;
     margin-right: 35px;
     height: 250px;
-    margin-left: 112px;
-    margin-top: 200px;
+    margin-left: 42px;
+    margin-top:200px;
+}
+.r2{
+margin-bottom: 109px;
+}
+.r1{
+margin-top: 0px;
+}
+.t118{
+    margin-top: 70px;
 }
 
 .trow2{
@@ -928,7 +972,7 @@ width: 251px;
     margin-top: 200px;
 }
 .trow2i{
-margin-top: 0px;
+margin-top: -135px;
 }
 .tdrp{
    color: #fff;
@@ -970,10 +1014,14 @@ background-color: white;
 .t1clr{
     padding-left: 20px;
 }
+ .tag1{
+      background-color: white;
+    }
 
 @media(max-width:767px){
 .hmarg1{
 margin-top: -83px;
+    height: 386px;
 }
     .jjj{
     margin-top: 81px;
@@ -989,18 +1037,18 @@ margin-top: -83px;
     
 .t9i{
 width: 346px;
-    margin-right: 34px;
-    height: 250px;
-        margin-bottom: -108px;
-        margin-left: 34px;
+    margin-right:auto;
+      height: 283px;
+      margin-bottom: -51px;
+        margin-left:auto;
 }
     .t99ii{
     margin-left: 58px;
     }
        .madd{
-         margin-left: -148px;
-    margin-top: 197px;
-           background-color: #1288c5;
+      margin-left: auto;
+    margin-top: auto;
+           background-color: :#1288c5;
     }
 .t91{
     width: 238px;
@@ -1015,8 +1063,8 @@ width: 346px;
     margin-top: -235px;
     }
     .tt22{
-        margin-left: -267px;
-    margin-top: 198px;
+     margin-left: auto;
+    margin-top: auto;
     }
     .tagz002{
     margin-right: 211px;
@@ -1027,7 +1075,7 @@ width: 346px;
     }
     .tmmarg{
          margin-left: 22px;
-    margin-top: 23px;
+    margin-top: 41px;
     width: 359px;
     }
     .msim{
@@ -1049,7 +1097,9 @@ width: 346px;
     }
     .tmagt{
     margin-top: -160px;
+      
     }
+   
     
     .t51{
         font-weight: 100;
@@ -1106,7 +1156,21 @@ width: 346px;
         background-color: white;
     }
 }
-
+.t91{
+height: 232px;
+    margin-top: 8px;
+}
+@media(max-width:927px){
+    .msim3{
+    margin-left: 99px;
+    }
+    .msim2{
+    margin-left: 153px;
+    }
+    .tmmarg{
+      margin-left: 99px;
+    }
+}
 @media(max-width:767px){
         .icmargin7{
             margin-top: 114px;
@@ -1124,22 +1188,23 @@ width: 346px;
 margin-top: 395px;
     width: 293px;
 }
+    .
     .icmargin14{
     margin-top: 19px;
     
     margin-left: -16px;
     }
     .icmargin15{
-    margin-left: 133px;
+    margin-left: auto;
     }
     .icmargin16{
     width: 272px;
     margin-left: -8px;
     }
     .icmargin17{
-   margin-top: 18px;
+ margin-top: auto;
     width: 97px;
-    margin-left: 8px;
+    margin-left: auto;
     }
     .icmargin30{
     margin-top: 236px;
@@ -1148,6 +1213,9 @@ margin-top: 395px;
     .icmargin31{
     margin-top: 219px;
     margin-left: 12px;
+    }
+    .i1{
+    margin-bottom: -121px;
     }
     .icmargin32{
     margin-left: 13px;
@@ -1159,81 +1227,84 @@ margin-top: 395px;
 /************************************** Tagz-Copy ###############################################/
 
 /* 
-	Max width before this PARTICULAR table gets nasty
-	This query will take effect for any screen smaller than 760px
-	and also iPads specifically.
-	*/
-	@media 
-	only screen and (max-width: 760px),
-	(min-device-width: 768px) and (max-device-width: 1024px)  {
-	
-		/* Force table to not be like tables anymore */
-		table, thead, tbody, th, td, tr { 
-			display: block; 
-		}
-		
-		/* Hide table headers (but not display: none;, for accessibility) */
-		thead tr { 
-			position: absolute;
-			top: -9999px;
-			left: -9999px;
-		}
-		
-		tr { border: 1px solid #ccc; 
+    Max width before this PARTICULAR table gets nasty
+    This query will take effect for any screen smaller than 760px
+    and also iPads specifically.
+    */
+    @media 
+    only screen and (max-width: 760px),
+    (min-device-width: 768px) and (max-device-width: 1024px)  {
+    
+        /* Force table to not be like tables anymore */
+        table, thead, tbody, th, td, tr { 
+            display: block; 
+        }
+        
+        /* Hide table headers (but not display: none;, for accessibility) */
+        thead tr { 
+            position: absolute;
+            top: -9999px;
+            left: -9999px;
+        }
+        
+        tr { border: 1px solid #ccc; 
             margin-top: 84px;
         }
-		
-		td { 
-			/* Behave  like a "row" */
-			border: none;
-			border-bottom: 1px solid #eee; 
-			position: relative;
-			padding-left: 50%; 
-		}
-		
-		td:before { 
-			/* Now like a table header */
-			position: absolute;
-			/* Top/left values mimic padding */
-			top: 6px;
-			left: 6px;
-			width: 45%; 
-			padding-right: 10px; 
-			white-space: nowrap;
-		}
-		
-		/*
-		Label the data
-		*/
-		
-		td:nth-of-type(3):before { content: "QUANTITY"; }
-		td:nth-of-type(4):before { content: "DELIVERY"; }
-		td:nth-of-type(5):before { content: "SUBTOTAL"; }
-		
-	}
-	
-	/* Smartphones (portrait and landscape) ----------- */
-	@media only screen
-	and (min-device-width : 320px)
-	and (max-device-width : 480px) {
-		body { 
-			padding: 0; 
-			margin: 0; 
-			width: 320px; }
-		}
-	
-	/* iPads (portrait and landscape) ----------- */
-	@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-		body { 
-			width: 495px; 
-		}
-	}
+        
+        td { 
+            /* Behave  like a "row" */
+            border: none;
+            border-bottom: 1px solid #eee; 
+            position: relative;
+            padding-left: 50%; 
+        }
+        
+        td:before { 
+            /* Now like a table header */
+            position: absolute;
+            /* Top/left values mimic padding */
+            top: 6px;
+            left: 6px;
+            width: 45%; 
+            padding-right: 10px; 
+            white-space: nowrap;
+        }
+        
+        /*
+        Label the data
+        */
+        
+        td:nth-of-type(3):before { content: "QUANTITY"; }
+        td:nth-of-type(4):before { content: "DELIVERY"; }
+        td:nth-of-type(5):before { content: "SUBTOTAL"; }
+        
+    }
+    
+    /* Smartphones (portrait and landscape) ----------- */
+    @media only screen
+    and (min-device-width : 320px)
+    and (max-device-width : 480px) {
+        body { 
+            padding: 0; 
+            margin: 0; 
+            width: 320px; }
+        }
+    
+    /* iPads (portrait and landscape) ----------- */
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+        body { 
+            width: 495px; 
+        }
+    }
 
 .rcart1{
 background-color: white;
     border-right: white;
     border-left: white;
     color:black;
+}
+.ru1{
+padding-top: 20px;
 }
 .rcart2{
 margin-top: 191px;
@@ -1249,6 +1320,9 @@ margin-top: 191px;
 }
 .rcart4{
     font-weight: 500;
+}
+.rcart20{
+    margin-top: 23px;
 }
 
 
@@ -1280,7 +1354,7 @@ height: 200px;
     }
     
 .rcart7{
-margin-left:-112px;
+margin-left:-70px;
 }
     .rcart002{
     margin-left:3px;
@@ -1297,10 +1371,11 @@ margin-left:-112px;
     margin-left: -108px;
     }
     .hheader{
-          margin-left: 133px;
+        margin-left: 80px;
     }
     .hheader2{
     margin-left: -3px;
+       margin-top: 27px;
     }
 }
 
@@ -1309,6 +1384,9 @@ margin-left:-112px;
     .icmargin3{
  margin-left: 3px;
     width: 134px;
+    }
+    .footer44{
+            margin-right: -23px;
     }
     .icmargin4{
         width: 134px;
@@ -1319,7 +1397,7 @@ margin-left:-112px;
     }
     .icmargin8{
         width: 243px;
-            margin-left: 10px;
+               height: 300px;
     }
     .icmargin9{
     font-size: 13px;

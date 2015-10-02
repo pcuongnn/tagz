@@ -17,7 +17,7 @@
                 <center><h4 class="rcart4"><%= line_item.quantity %><%= item_form.hidden_field :quantity, min: 0, class: "form-control line_item_quantity", size: 5 %></h4></td></center>
 
        <td class="rcart1"><center><h4 class="rcart4">FREE</h4></td></center>
-    <td class="rcart1" data-hook="cart_item_total"><center><h4 class="rcart4">
+    <td class="rcart1" data-hook="cart_item_total"><center><h4 class="rcart4 rcart20">
       <%= line_item.display_amount.to_html unless line_item.quantity.nil? %></h4></center>
     
       <%= link_to content_tag(:span, 'REMOVE', class: 'btn btn-info hbtn1 ccbtn rcart5 rcart8 icmargin3'), '#', class: 'delete', id: "delete_#{dom_id(line_item)}" %>
