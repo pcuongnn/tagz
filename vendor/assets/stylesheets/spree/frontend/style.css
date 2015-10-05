@@ -232,6 +232,7 @@ border-bottom: 1px solid black;
 footer {
     
     background-color: #ebebeb;
+    margin-bottom: -44px;
 }
 
 p.copyright {
