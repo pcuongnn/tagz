@@ -29,7 +29,7 @@ h6 {
 }
 div.add-to-cart{
     margin-left: 100px;
-    margin-top:  20px;
+   margin-top: 21px;
 }
 
 div#registration{
@@ -130,7 +130,7 @@ float: right;
 .footer45{
 float: right;
     height: 62px;
-    margin-top: 35px;
+    margin-top: 40px;
     margin-right: 57px;
     font-weight: 100;
 }
@@ -472,8 +472,9 @@ margin-top: 23px;
 }
 
 .fcolor1{
-background-color:#ebebeb;
-margin-top: 27px;
+background-color: #ebebeb;
+    margin-top: 39px;
+    height: 120px;
 }
 
 .talign{
@@ -886,7 +887,7 @@ border-radius: 0px;
     margin-bottom: 6px;}
 .ccbtn{
 
-       margin-bottom: -116px;
+       margin-bottom: -102px;
     border-color:black;
 }
 .ccart{
