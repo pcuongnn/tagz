@@ -51,7 +51,13 @@ font-family: 'Roboto', sans-serif;
                 <%= link_to 'LOG IN', spree_login_path, class:  "navbar-brand topnav  navtextcol nextcol hheader tt " %>
                 <%= link_to 'SIGN UP', spree_signup_path, class: "navbar-brand topnav navtextcol nextcol hheader tt " %>
             <% end %>    
-                <a class="navbar-brand topnav  nextcol1 hheader2 tt2" href="/cart">BAG 0</a>
+                <a id="link-to-cart"  class="navbar-brand topnav  nextcol1 hheader2 tt2" data-hook>
+        <noscript>
+          <%= link_to Spree.t(:cart), '/cart' %>
+        </noscript>
+        &nbsp;
+      </a>
+      <script>Spree.fetch_cart()</script></a>
             
             </div>
    
