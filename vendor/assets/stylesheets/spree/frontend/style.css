@@ -1390,8 +1390,10 @@ margin-left:-70px;
 @media(max-width:379px){
 
     .icmargin3{
- margin-left: 3px;
+margin-left: 3px;
     width: 134px;
+    margin-top: 17px;
+    padding-top: 16px;
     }
     .footer44{
             margin-right: -23px;
