@@ -1162,8 +1162,9 @@ width: 346px;
     }
 }
 .t91{
-height: 232px;
-    margin-top: 8px;
+height: 200px;
+    margin-top: 32px;
+    width: 200px;
 }
 @media(max-width:927px){
     .msim3{
