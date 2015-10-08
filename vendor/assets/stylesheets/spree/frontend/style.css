@@ -582,7 +582,7 @@ background-color:#ebebeb;
 
             .fcolor{
      height: 110px;
-                margin-top: 324px;
+               
     }
     .fcl11{
     margin-top: 166px;
@@ -1039,7 +1039,7 @@ margin-top: -83px;
     }
     
 .t9i{
-width: 346px;
+
     margin-right:auto;
       height: 283px;
       margin-bottom: -51px;
@@ -1381,7 +1381,7 @@ margin-left: -82px;
     margin-left: -108px;
     }
     .hheader{
-        margin-left: 80px;
+          margin-left: 71px;
     }
     .hheader2{
     margin-left: -3px;
@@ -1427,8 +1427,8 @@ margin-left: 3px;
     margin-left: 183px;
     }
     .tt2{
-   margin-top: -53px;
-    margin-left: 188px;
+      margin-top: -50px;
+    margin-left: 180px;
     }
 }
 
@@ -1444,3 +1444,40 @@ text-align: left;
 }
 
 
+.kickback{
+background-color: #ebebeb;
+}
+.kick{
+color: #1288c5;
+}
+a.know{
+padding-left: 14px;
+    color: black;
+    font-weight: 400;
+    
+}
+.kn1{
+ display: inline-block;
+color: #1288c5;
+}
+.apache{
+margin-top: -119px;
+}
+.tp{
+font-weight:400;
+}
+.simi{
+padding-top: 31px;
+    padding-left: 28px;
+}
+
+
+
+.intro-header2 {
+      
+   
+    text-align: center;
+    color: #f8f8f8;
+    background: url(../img/home.png) no-repeat center center;
+    background-size: cover;
+}

@@ -1,4 +1,3 @@
-<a name="about"></a>
      <div class="intro-header">
          
          <!--Start Container-->
@@ -7,7 +6,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="intro-message">
-                        <center> <h1 class="fw jjj icmargin7"> Shoe Tags That Enhances Your Shoe Look </h1></center>
+                        <center> <h1 class="jjj "> Shoe Tags That Enhances Your Shoe Look </h1></center>
                     </div>
                 </div>
             </div>
@@ -16,47 +15,67 @@
         <!-- /.container -->
 
     </div>
-    <div class="col-md-12 hombodycol hmarg1">
-            <h3 class="abt hombd">KICK TAGZ</h3>
-            <h5 class="knwmr">Know More</h5>
-    
-       <div class="bgcol">
-        <p class="p1 p3">
+    <div class="col-md-12 kickback">
+      <div class="container">
+          <div class="col-md-12">
+            <h3 class="kn1">KICK TAGZ</h3>
+            <a href="#" class="know">Know more </a>
+          </div>
+       <div class="col-md-12">
+        <p class="tp">
         Kicktagz attach to your laces and provide your sneakers with a sportier look that will make your sneakers pop! This new and exciting sneaker accessory is 100% metal and able to withstand normal wear and tear a typical sneaker endures. Separate yourself from the pack and get your KickTagz today. Stay tuned for more creative designs and colors!
         
-           </p></div></div>
+           </p>
+        </div>
+      </div>
+    </div>
+
+
+
    <div class="col-md-12">
       <!--start Container-->
          <div class="container">
-              <h4 class="similarh nn11 icmargin10"> Similar Recommendations </h4>
+              <div class="col-md-12 simi">
+            <h4> Similar Recommendations </h4></div>
+            <div class="col-md-12 apache">
           <% @products.each do |product| %>
           <div class="col-md-4 t8 t9i icmargin8">
             <div class=" row u1">
-                        <center>  <h5><%= product.name %></h5>
-                        <h5><%= product.sku %></h5>
-                        <%= link_to large_image(product, itemprop: "image", class: "shoeh"), product_path(product) %></center>
+                        <center>  
+                          <h5><%= product.name %></h5>
+                          <h5><%= product.sku %></h5>
+                          <%= link_to large_image(product, itemprop: "image", class: "shoeh"), product_path(product) %>
+                        </center>
+
                         <div class="col-xs-12">
                           <h3>
-                        <%= product.price %>$
-                        </h3></div>
-                        <div class="col-xs-6">
-                        <h5><%= link_to 'Details' , product_path(product) %></h5>
+                            <%= product.price %>$
+                          </h3>
                         </div>
+
                         <div class="col-xs-6">
-                        <h5 class="pull-right">
-                        <%= form_for :order, :url => populate_orders_url do |f| %>
-                          <%= hidden_field_tag "variants[#{product.variants_including_master.first.id
-                        }]", 1, :size => 3 %>
-                          <%= hidden_field_tag "variant_id", product.variants_including_master.first.id %>
-                          <%= hidden_field_tag "quantity", 1 %>
-                          <%= link_to 'ADD TO BAG', '#', :onclick => "$(this).parent().submit(); return false;", :class => "button" %>
-                        <% end %>
-                        </h5>
+                          <h5>
+                            <%= link_to 'Details' , product_path(product) %>
+                          </h5>
+                        </div>
+                        
+                        <div class="col-xs-6">
+                          <h5 class="pull-right">
+                            <%= form_for :order, :url => populate_orders_url do |f| %>
+                              <%= hidden_field_tag "variants[#{product.variants_including_master.first.id
+                            }]", 1, :size => 3 %>
+                              <%= hidden_field_tag "variant_id", product.variants_including_master.first.id %>
+                              <%= hidden_field_tag "quantity", 1 %>
+                              <%= link_to 'ADD TO BAG', '#', :onclick => "$(this).parent().submit(); return false;", :class => "button" %>
+                            <% end %>
+                          </h5>
                         </div>
              </div>
           </div>
-        <% end %>     
-         </div>   
+        <% end %>
+        </div>
+
+      </div>   
             
         
     </div>
@@ -82,4 +101,4 @@
                 
         </div>
      
-    </footer>
+    </footer> 
