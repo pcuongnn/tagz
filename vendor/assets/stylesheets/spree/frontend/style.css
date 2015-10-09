@@ -1291,12 +1291,7 @@ margin-top: 395px;
     /* Smartphones (portrait and landscape) ----------- */
     
     /* iPads (portrait and landscape) ----------- */
-    @media only screen and (min-device-width: 799px) and (max-device-width: 1024px) {
-        body { 
-            width: 495px; 
-        }
-    }
-
+    
 
 .rcart1{
 background-color: white;
