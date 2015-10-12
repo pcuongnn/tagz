@@ -27,6 +27,10 @@ h6 {
    font-family: 'Roboto', sans-serif;
     font-weight: 700;
 }
+fieldset#order_summary{
+    margin-top: 200px;
+}
+
 div.add-to-cart{
     margin-left: 100px;
   margin-top: -15px;
@@ -36,8 +40,8 @@ div#registration{
     margin-top: 200px;
 }
 
-div#checkout-summary.col-md-3{
-    margin-top: 100px;
+div#checkout{
+    margin-top: 200px;
 }
 
 div.col-md-9{

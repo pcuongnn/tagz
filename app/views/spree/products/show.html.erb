@@ -1,7 +1,6 @@
 <a name="about"></a>
     
         <div class="col-md-12 tmagt tag1">
-            <h2 class="hidden-xs t7">  Tagz > Details</h2>
             <!--Start Container-->
         <div class="container t1 t92 icmargin220 icmargin12 icmargin13">
             <div class="col-md-2">
@@ -14,9 +13,9 @@
                 <%= @product.description %>
                 </p>
             <h1 class="t5 tagzcst icmargin15"><%= @product.price %>$</h1>
-               <%= render :partial => 'cart_form' %>
+               
             </div>
-
+            <%= render :partial => 'cart_form' %>
     </div>
            <!--End Container-->
         </div>
