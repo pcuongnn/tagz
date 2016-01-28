@@ -6,11 +6,11 @@
 
 @font-face {
         font-family: "hardkaze";
-        src: url(../Hardkaze.ttf) format("truetype");
+        src: asset-url('Hardkaze.ttf');
     }
 @font-face {
         font-family: "old-newspaper-type";
-        src: url(../OldNewspaperTypes.ttf) format("truetype");
+        src: asset-url('OldNewspaperTypes.ttf');
     }
 body,
 html {
