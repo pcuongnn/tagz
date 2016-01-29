@@ -4,7 +4,7 @@
             <!--Start Container-->
         <div class="container t1 t92 icmargin220 icmargin12 icmargin13">
             <div class="col-md-2">
-            <%= link_to large_image(@product, itemprop: "image", class: " t91 img-responsive"), product_path(@product) %>
+            <%= link_to product_image(@product), product_path(@product) %>
                 <!-- /.container --></div>
             <div class="col-md-10 tmarg11">
             
@@ -31,7 +31,7 @@
             <div class=" row u1">
                         <center>  <h5><%= product.name %></h5>
                         <h5><%= product.sku %></h5>
-                        <%= link_to large_image(product, itemprop: "image", class: "shoeh"), product_path(product) %></center>
+                        <%= link_to product_image(product), product_path(product) %></center>
                         <div class="col-xs-12">
                         <h3>
                         <%= product.price %>$

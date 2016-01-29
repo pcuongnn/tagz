@@ -7,7 +7,7 @@
                   <div class=" row u1">
                             <center>  <h5><%= product.name %></h5>
                             <h5><%= product.sku %></h5>
-                            <%= link_to large_image(product, itemprop: "image", class: "shoeh"), product_path(product) %></center>
+                            <%= link_to product_image(product), product_path(product) %></center>
                             <div class="col-xs-12">
                             <h3>
                             <%= product.price %>$
@@ -41,7 +41,7 @@
                   <div class=" row u1">
                             <center>  <h5><%= product.name %></h5>
                             <h5><%= product.sku %></h5>
-                            <%= link_to large_image(product, itemprop: "image", class: "shoeh"), product_path(product) %></center>
+                            <%= link_to product_image(product), product_path(product) %></center>
                             <div class="col-xs-12">
                             <h3>
                             <%= product.price %>$
